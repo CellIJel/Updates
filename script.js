@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('commits.json')
         .then(response => response.json())
         .then(commits => {
+            const flattenedCommits = commits.flat();
             const commitsContainer = document.getElementById('commits-container');
-            commits.forEach(commit => {
+            flattenedCommits.forEach(commit => {
                 const commitElement = document.createElement('div');
                 commitElement.className = 'commit';
                 commitElement.innerHTML = `
