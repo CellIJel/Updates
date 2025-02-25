@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(commits => {
             const flattenedCommits = commits.flat();
+            flattenedCommits.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date
             const commitsContainer = document.getElementById('commits-container');
             commitsContainer.className = 'commits-grid'; // Add this line
             flattenedCommits.forEach(commit => {
