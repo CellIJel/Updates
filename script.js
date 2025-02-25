@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
             flattenedCommits.forEach(commit => {
                 const commitElement = document.createElement('div');
                 commitElement.className = 'commit';
+                const commitUrl = `https://github.com/${commit.repo}/commit/${commit.sha}`;
                 commitElement.innerHTML = `
                     <p><strong>Repository:</strong> ${commit.repo}</p>
-                    <p><strong>Message:</strong> ${commit.message}</p>
+                    <p><strong>Message:</strong> <a href="${commitUrl}" target="_blank">${commit.message}</a></p>
                     <p><strong>Author:</strong> ${commit.author}</p>
                     <p><strong>Date:</strong> ${commit.date}</p>
                 `;

@@ -15,8 +15,9 @@ h1 {
     width: 80%;
     max-width: 800px;
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -24,6 +25,8 @@ h1 {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px 0;
+    flex: 1 1 calc(50% - 20px); /* Adjust the width to show two commits side by side */
+    box-sizing: border-box;
 }
 
 body.dark-mode {
