@@ -24,7 +24,8 @@ jobs:
         # Include commits from the current repository
         CURRENT_REPO_COMMITS=$(curl -s https://api.github.com/repos/CellIJel/Updates/commits | jq -r '.[] | {repo: "CellIJel/Updates", message: .commit.message, author: .commit.author.name, date: .commit.author.date}')
         echo $CURRENT_REPO_COMMITS | jq -s . >> commits.json
-        cat commits.json | jq -s . > tmp.json && mv tmp.json commits.json
+        # Merge all arrays into a single array
+        jq -s 'add' commits.json > tmp.json && mv tmp.json commits.json
 
     - name: Commit and push changes
       env:
