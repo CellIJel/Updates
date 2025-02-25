@@ -1,0 +1,31 @@
+name: Update Commits
+
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+
+jobs:
+  update-commits:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Fetch recent commits
+      run: |
+        echo "[]" > commits.json
+        REPOS=$(curl -s https://api.github.com/users/CellIJel/repos | jq -r '.[].full_name')
+        for REPO in $REPOS; do
+          COMMITS=$(curl -s https://api.github.com/repos/$REPO/commits | jq -r '.[] | {repo: "'$REPO'", message: .commit.message, author: .commit.author.name, date: .commit.author.date}')
+          echo $COMMITS | jq -s . >> commits.json
+        done
+        cat commits.json | jq -s . > tmp.json && mv tmp.json commits.json
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add commits.json
+        git commit -m "Update commits"
+        git push
