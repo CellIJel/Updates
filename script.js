@@ -1,9 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Add dark mode toggle button
+    const toggleButton = document.createElement('button');
+    toggleButton.textContent = 'Toggle Dark Mode';
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+    document.body.insertBefore(toggleButton, document.body.firstChild);
+
     fetch('commits.json')
         .then(response => response.json())
         .then(commits => {
             const flattenedCommits = commits.flat();
             const commitsContainer = document.getElementById('commits-container');
+            commitsContainer.className = 'commits-grid'; // Add this line
             flattenedCommits.forEach(commit => {
                 const commitElement = document.createElement('div');
                 commitElement.className = 'commit';
