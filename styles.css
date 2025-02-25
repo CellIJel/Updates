@@ -22,3 +22,12 @@ h1 {
     padding: 10px;
     margin: 10px 0;
 }
+
+body.dark-mode {
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+body.dark-mode .commit {
+    border-color: #444;
+}
