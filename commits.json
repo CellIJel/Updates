@@ -1,6 +1,102 @@
 [
   {
     "repo": "CellIJel/Updates",
+    "message": "Update script.js",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:06:28Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update script.js",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:06:28Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Delete theme.js",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:06:17Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Delete theme.js",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:06:17Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Add files via upload",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:05:21Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Add files via upload",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:05:21Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Merge pull request #11 from CellIJel/CellIJel-patch-1\n\nClean up",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:02:24Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete .github/workflows directory",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:00:30Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete scripts/updateCommits.js",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:00:13Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete node_modules directory",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:59:51Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:59:33Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete package.json",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:59:14Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete package-lock.json",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:58:56Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update recent commits",
+    "author": "github-actions[bot]",
+    "date": "2025-02-26T01:50:22Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:50:06Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update commits",
+    "author": "GitHub Actions",
+    "date": "2025-02-26T01:48:08Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
     "message": "Update commits.json",
     "author": "CellIJel",
     "date": "2025-02-26T01:46:47Z"
@@ -82,101 +178,5 @@
     "message": "Update commits",
     "author": "GitHub Actions",
     "date": "2025-02-25T21:42:22Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Merge branch 'main' of github.com:CellIJel/Updates",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:28:04Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Merge branch 'main' of github.com:CellIJel/Updates",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:28:04Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Merge commit arrays into a single array in update-commits workflow",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:27:45Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Merge commit arrays into a single array in update-commits workflow",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:27:45Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update commits",
-    "author": "GitHub Actions",
-    "date": "2025-02-25T21:27:39Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update commits",
-    "author": "GitHub Actions",
-    "date": "2025-02-25T21:23:33Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Refactor layout styles and enhance commit message links in the display",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:22:02Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Refactor layout styles and enhance commit message links in the display",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:22:02Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update commits",
-    "author": "GitHub Actions",
-    "date": "2025-02-25T21:18:24Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Sort commits by date and update styles for better layout",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:16:44Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Sort commits by date and update styles for better layout",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:16:44Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Merge branch 'main' of github.com:CellIJel/Updates",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:10:14Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Merge branch 'main' of github.com:CellIJel/Updates",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:10:14Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Fix some issues",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:09:58Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Fix some issues",
-    "author": "CellIJel",
-    "date": "2025-02-25T21:09:58Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update commits",
-    "author": "GitHub Actions",
-    "date": "2025-02-25T21:09:23Z"
   }
 ]
