@@ -1,8 +1,11 @@
 name: Update Commits
 
 on:
-  schedule:
-    - cron: '*/60 * * * *'
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
   workflow_dispatch:
 
 jobs:
