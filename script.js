@@ -39,18 +39,29 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('commits.json')
         .then(response => response.json())
         .then(commits => {
-            const container = document.getElementById('commits-container');
+            const commitsContainer = document.getElementById('commits-container');
+            commitsContainer.innerHTML = ''; // Clear any existing content
+
+            if (commits.length === 0) {
+                commitsContainer.innerHTML = '<p>No recent commits found.</p>';
+                return;
+            }
+
             commits.forEach(commit => {
                 const commitElement = document.createElement('div');
                 commitElement.className = 'commit';
                 commitElement.innerHTML = `
-                    <h3>${commit.message}</h3>
+                    <p><strong>Repository:</strong> ${commit.repo}</p>
+                    <p><strong>Message:</strong> ${commit.message}</p>
                     <p><strong>Author:</strong> ${commit.author}</p>
                     <p><strong>Date:</strong> ${new Date(commit.date).toLocaleString()}</p>
-                    <p><strong>Repository:</strong> ${commit.repo}</p>
                 `;
-                container.appendChild(commitElement);
+                commitsContainer.appendChild(commitElement);
             });
         })
-        .catch(error => console.error('Error fetching commits:', error));
+        .catch(error => {
+            console.error('Error fetching commits:', error);
+            const commitsContainer = document.getElementById('commits-container');
+            commitsContainer.innerHTML = '<p>Error loading commits.</p>';
+        });
 });
