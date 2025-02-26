@@ -27,12 +27,19 @@ jobs:
         # Merge all arrays into a single array
         jq -s 'add' commits.json > tmp.json && mv tmp.json commits.json
 
+    - name: Check Committer
+      run: |
+        if [[ "$(git log -1 --pretty=format:'%ce')" == "actions@github.com" ]]; then
+          echo "Commit from actions-user, skipping workflow."
+          exit 0
+        fi
+
     - name: Commit and push changes
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_T }}
+        GH_T: ${{ secrets.GH_T }}
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git add commits.json
         git commit -m "Update commits"
-        git push https://x-access-token:${GITHUB_TOKEN}@github.com/CellIJel/Updates.git
+        git push https://x-access-token:${GH_T}@github.com/CellIJel/Updates.git
