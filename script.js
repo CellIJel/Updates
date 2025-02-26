@@ -36,7 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     document.body.insertBefore(toggleButton, document.body.firstChild);
 
-    fetch('commits.json')
+    // Add refresh button
+    const refreshButton = document.createElement('button');
+    refreshButton.textContent = 'Refresh Commits';
+    refreshButton.addEventListener('click', () => {
+        location.reload(true); // Force reload from server
+    });
+    document.body.insertBefore(refreshButton, document.getElementById('commits-container'));
+
+    // Add cache-busting to the fetch request
+    fetch('commits.json', {
+        cache: 'no-store'
+    })
         .then(response => response.json())
         .then(commits => {
             const commitsContainer = document.getElementById('commits-container');
