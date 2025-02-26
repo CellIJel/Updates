@@ -35,7 +35,6 @@ jobs:
         if [[ "$(git log -1 --pretty=format:'%ce')" == "actions@github.com" ]]; then
           echo "Commit from actions-user, skipping workflow."
           exit 0
-        fi
 
     - name: Commit and push changes
       env:
