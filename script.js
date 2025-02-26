@@ -39,21 +39,18 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('commits.json')
         .then(response => response.json())
         .then(commits => {
-            const flattenedCommits = commits.flat();
-            flattenedCommits.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date
-            const commitsContainer = document.getElementById('commits-container');
-            commitsContainer.className = 'commits-grid'; // Add this line
-            flattenedCommits.forEach(commit => {
+            const container = document.getElementById('commits-container');
+            commits.forEach(commit => {
                 const commitElement = document.createElement('div');
                 commitElement.className = 'commit';
-                const commitUrl = `https://github.com/${commit.repo}/commit/${commit.sha}`;
                 commitElement.innerHTML = `
-                    <p><strong>Repository:</strong> ${commit.repo}</p>
-                    <p><strong>Message:</strong> <a href="${commitUrl}" target="_blank">${commit.message}</a></p>
+                    <h3>${commit.message}</h3>
                     <p><strong>Author:</strong> ${commit.author}</p>
-                    <p><strong>Date:</strong> ${commit.date}</p>
+                    <p><strong>Date:</strong> ${new Date(commit.date).toLocaleString()}</p>
+                    <p><strong>Repository:</strong> ${commit.repo}</p>
                 `;
-                commitsContainer.appendChild(commitElement);
+                container.appendChild(commitElement);
             });
-        });
+        })
+        .catch(error => console.error('Error fetching commits:', error));
 });
