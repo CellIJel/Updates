@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const commitsContainer = document.getElementById('commits-container');
             commitsContainer.innerHTML = ''; // Clear any existing content
 
-            if (commits.length === 0) {
+            if (!Array.isArray(commits) || commits.length === 0) {
                 commitsContainer.innerHTML = '<p>No recent commits found.</p>';
                 return;
             }
