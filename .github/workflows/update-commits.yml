@@ -46,3 +46,11 @@ jobs:
         git add commits.json
         git commit -m "Update commits"
         git push https://x-access-token:${GH_T}@github.com/CellIJel/Updates.git
+
+    - name: Trigger GitHub Pages Workflow
+      run: |
+        curl -X POST \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.GH_T }}" \
+          https://api.github.com/repos/CellIJel/Updates/actions/workflows/github-pages.yml/dispatches \
+          -d '{"ref":"main"}'
