@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Reset commits.json",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:49:44Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Create pages.yml",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:47:57Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Merge branch 'main' of github.com:CellIJel/Updates",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:45:46Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Add trigger for GitHub Pages workflow in update-commits.yml",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:45:32Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Revert Previous Commit.",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:40:22Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Revert previous commit",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:40:08Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Enhance GitHub Actions workflow to skip commits from actions-user",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:38:32Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update styles.css",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:32:36Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:31:22Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:29:22Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Hide cookie banner by default and update cookie setting logic",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:25:37Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Merge branch 'main' of github.com:CellIJel/Updates",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:20:55Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update commit fetching logic and hide cookie banner by default",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:20:35Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update Cookie Banner",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:15:03Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Formatted commits in a module like listing",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:04:39Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Added Favicon Image.",
+    "author": "CellIJel",
+    "date": "2025-02-27T15:37:37Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Fixed an issue that adds the same commit twice",
+    "author": "CellIJel",
+    "date": "2025-02-27T15:32:57Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update style.css",
+    "author": "CellIJel",
+    "date": "2025-02-27T14:56:54Z"
+  },
+  {
+    "repo": "CellIJel/GPTMade",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-26T05:00:31Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-26T05:00:12Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Merge pull request #11 from CellIJel/CellIJel-patch-1\n\nClean up",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:02:24Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete .github/workflows directory",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:00:30Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete scripts/updateCommits.js",
+    "author": "CellIJel",
+    "date": "2025-02-26T02:00:13Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete node_modules directory",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:59:51Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:59:33Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete package.json",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:59:14Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Delete package-lock.json",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:58:56Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update recent commits",
+    "author": "github-actions[bot]",
+    "date": "2025-02-26T01:50:22Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Update index.html",
+    "author": "CellIJel",
+    "date": "2025-02-26T01:50:06Z"
+  },
+  {
+    "repo": "CellIJel/GPTMade",
+    "message": "Merge pull request #28 from CellIJel/CellIJel-patch-1\n\nupdates",
+    "author": "CellIJel",
+    "date": "2025-02-24T18:31:44Z"
+  }
+]
