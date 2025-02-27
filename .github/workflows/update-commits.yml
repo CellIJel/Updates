@@ -31,16 +31,13 @@ jobs:
         jq -s 'add | unique_by(.repo, .message, .author, .date) | sort_by(.date) | reverse | .[:30]' commits.json > tmp.json && mv tmp.json commits.json
 
     - name: Check Committer
-      id: check_committer
       run: |
         if [[ "$(git log -1 --pretty=format:'%ce')" == "actions@github.com" ]]; then
-          echo "::set-output name=skip::true"
-        else
-          echo "::set-output name=skip::false"
+          echo "Commit from actions-user, skipping workflow."
+          exit 0
         fi
 
     - name: Commit and push changes
-      if: steps.check_committer.outputs.skip == 'false'
       env:
         GH_T: ${{ secrets.GH_T }}
       run: |
