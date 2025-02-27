@@ -37,3 +37,11 @@ body.dark-mode {
 body.dark-mode .commit {
     border-color: #444;
 }
+
+#cookie-banner a:link {
+    color: #1e90ff; /* Use the specified color */
+}
+
+#cookie-banner a:visited {
+    color: #1e90ff; /* Use the specified color */
+}
