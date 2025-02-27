@@ -35,6 +35,22 @@ body.dark-mode .commit {
     border-color: #444;
 }
 
+#cookie-banner {
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#cookie-banner a {
+    color: blue;
+    text-decoration: underline;
+}
+
 #cookie-banner a:link {
     color: #1e90ff; /* Use the specified color */
 }
