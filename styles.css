@@ -36,20 +36,16 @@ body.dark-mode .commit {
 }
 
 #cookie-banner {
-    background-color: yellow;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    background-color: yellow;
+    color: #1e90ff;
+    text-align: center;
+    padding: 10px;
     z-index: 1000;
-    display: none; /* Hide by default */
-}
-
-#cookie-banner a {
-    color: blue;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 #cookie-banner a:link {
