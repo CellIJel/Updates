@@ -1,6 +1,18 @@
 [
   {
     "repo": "CellIJel/Updates",
+    "message": "Merge branch 'main' of github.com:CellIJel/Updates",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:45:46Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Add trigger for GitHub Pages workflow in update-commits.yml",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:45:32Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
     "message": "Revert Previous Commit.",
     "author": "CellIJel",
     "date": "2025-02-27T20:40:22Z"
@@ -94,18 +106,6 @@
     "message": "Update index.html",
     "author": "CellIJel",
     "date": "2025-02-27T15:25:18Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Add files via upload",
-    "author": "CellIJel",
-    "date": "2025-02-27T15:24:41Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update styles.css",
-    "author": "CellIJel",
-    "date": "2025-02-27T15:23:45Z"
   },
   {
     "repo": "CellIJel/cellijel.github.io",
