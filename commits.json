@@ -1,6 +1,12 @@
 [
   {
     "repo": "CellIJel/Updates",
+    "message": "Hide cookie banner by default and update cookie setting logic",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:25:37Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
     "message": "Merge branch 'main' of github.com:CellIJel/Updates",
     "author": "CellIJel",
     "date": "2025-02-27T20:20:55Z"
@@ -124,12 +130,6 @@
     "message": "Update index.html",
     "author": "CellIJel",
     "date": "2025-02-26T02:49:16Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update index.html",
-    "author": "CellIJel",
-    "date": "2025-02-26T02:46:37Z"
   },
   {
     "repo": "CellIJel/cellijel.github.io",
