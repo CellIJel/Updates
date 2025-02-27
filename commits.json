@@ -1,6 +1,12 @@
 [
   {
     "repo": "CellIJel/Updates",
+    "message": "Update styles.css",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:32:36Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
     "message": "Update index.html",
     "author": "CellIJel",
     "date": "2025-02-27T20:31:22Z"
@@ -172,11 +178,5 @@
     "message": "Update recent commits",
     "author": "github-actions[bot]",
     "date": "2025-02-26T01:50:22Z"
-  },
-  {
-    "repo": "CellIJel/cellijel.github.io",
-    "message": "Update index.html",
-    "author": "CellIJel",
-    "date": "2025-02-26T01:50:06Z"
   }
 ]
