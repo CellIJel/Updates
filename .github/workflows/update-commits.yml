@@ -21,11 +21,11 @@ jobs:
         echo "[]" > commits.json
         REPOS=$(curl -s https://api.github.com/users/CellIJel/repos | jq -r '.[].full_name')
         for REPO in $REPOS; do
-          COMMITS=$(curl -s https://api.github.com/repos/$REPO/commits | jq -r '.[] | {repo: "'$REPO'", message: .commit.message, author: .commit.author.name, date: .commit.author.date}')
+          COMMITS=$(curl -s https://api.github.com/repos/$REPO/commits | jq -r 'map(select(.commit.author.name != "GitHub Actions")) | .[] | {repo: "'$REPO'", message: .commit.message, author: .commit.author.name, date: .commit.author.date}')
           echo $COMMITS | jq -s . >> commits.json
         done
         # Include commits from the current repository, excluding actions-user commits
-        CURRENT_REPO_COMMITS=$(curl -s https://api.github.com/repos/CellIJel/Updates/commits | jq -r 'map(select(.commit.author.email != "actions@github.com")) | .[] | {repo: "CellIJel/Updates", message: .commit.message, author: .commit.author.name, date: .commit.author.date}')
+        CURRENT_REPO_COMMITS=$(curl -s https://api.github.com/repos/CellIJel/Updates/commits | jq -r 'map(select(.commit.author.email != "actions@github.com" and .commit.author.name != "GitHub Actions")) | .[] | {repo: "CellIJel/Updates", message: .commit.message, author: .commit.author.name, date: .commit.author.date}')
         echo $CURRENT_REPO_COMMITS | jq -s . >> commits.json
         # Merge all arrays into a single array, remove duplicates, and limit to the latest 30 commits
         jq -s 'add | unique_by(.repo, .message, .author, .date) | sort_by(.date) | reverse | .[:30]' commits.json > tmp.json && mv tmp.json commits.json
