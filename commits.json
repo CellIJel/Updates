@@ -1,6 +1,18 @@
 [
   {
     "repo": "CellIJel/Updates",
+    "message": "Update Cookie Banner",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:15:03Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update commits",
+    "author": "GitHub Actions",
+    "date": "2025-02-27T20:04:56Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
     "message": "Formatted commits in a module like listing",
     "author": "CellIJel",
     "date": "2025-02-27T20:04:39Z"
@@ -166,17 +178,5 @@
     "message": "Update commits",
     "author": "GitHub Actions",
     "date": "2025-02-26T02:43:58Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update script.js",
-    "author": "CellIJel",
-    "date": "2025-02-26T02:42:21Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update script.js",
-    "author": "CellIJel",
-    "date": "2025-02-26T02:36:51Z"
   }
 ]
