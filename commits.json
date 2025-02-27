@@ -1,6 +1,18 @@
 [
   {
     "repo": "CellIJel/Updates",
+    "message": "Formatted commits in a module like listing",
+    "author": "CellIJel",
+    "date": "2025-02-27T20:04:39Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
+    "message": "Update commits",
+    "author": "GitHub Actions",
+    "date": "2025-02-27T15:38:00Z"
+  },
+  {
+    "repo": "CellIJel/Updates",
     "message": "Added Favicon Image.",
     "author": "CellIJel",
     "date": "2025-02-27T15:37:37Z"
@@ -166,17 +178,5 @@
     "message": "Update script.js",
     "author": "CellIJel",
     "date": "2025-02-26T02:36:51Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update script.js",
-    "author": "CellIJel",
-    "date": "2025-02-26T02:34:56Z"
-  },
-  {
-    "repo": "CellIJel/Updates",
-    "message": "Update commits.json",
-    "author": "CellIJel",
-    "date": "2025-02-26T02:29:17Z"
   }
 ]
