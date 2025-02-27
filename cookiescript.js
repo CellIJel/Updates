@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Element with ID "cookie-banner" not found.');
         }
     }
-});
 
-// Instructions to set the cookie via the browser's developer tools console:
-// document.cookie = "showBanner=true; path=/";
-// Remove the cookie by pasting
-// document.cookie = "showBanner=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    // Show the banner when the cookie is set
+    document.cookie = "showBanner=true; path=/";
+});

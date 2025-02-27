@@ -44,6 +44,7 @@ body.dark-mode .commit {
     top: 0;
     left: 0;
     z-index: 1000;
+    display: none; /* Hide by default */
 }
 
 #cookie-banner a {
