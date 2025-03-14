@@ -1,6 +1,18 @@
 [
   {
     "repo": "CellIJel/misc",
+    "message": "Update styles.css",
+    "author": "CellIJel",
+    "date": "2025-03-14T18:24:31Z"
+  },
+  {
+    "repo": "CellIJel/cellijel.github.io",
+    "message": "Added margin-top to div1 for readability",
+    "author": "CellIJel",
+    "date": "2025-03-14T17:20:15Z"
+  },
+  {
+    "repo": "CellIJel/misc",
     "message": "Update index.html",
     "author": "CellIJel",
     "date": "2025-03-14T05:32:31Z"
@@ -166,17 +178,5 @@
     "message": "Add files via upload",
     "author": "CellIJel",
     "date": "2025-03-07T18:22:45Z"
-  },
-  {
-    "repo": "CellIJel/misc",
-    "message": "Update and rename update_links.yml to update-index.yml",
-    "author": "CellIJel",
-    "date": "2025-03-07T18:16:38Z"
-  },
-  {
-    "repo": "CellIJel/misc",
-    "message": "Add GitHub Actions workflow to update folder links in index.html and restructure file paths",
-    "author": "CellIJel",
-    "date": "2025-03-07T18:13:40Z"
   }
 ]
